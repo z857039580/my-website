@@ -15,6 +15,10 @@
   }
   .content {
     z-index: 2;
+    .sloganImg{ width: 100%}
+    .formContent{ width: 86%; margin: 0 auto;
+      .mat-form-field{ display: block;}
+    }
   }
 }
 

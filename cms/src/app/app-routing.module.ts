@@ -14,7 +14,7 @@ const routes: Routes = [
   },
   { path: 'login', component: LoginComponent },
   { path: 'error', component: ErrorComponent },
-  { path: '', redirectTo: '/admin/order', pathMatch: 'full' },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: '**', component: ErrorComponent },
 ];
 

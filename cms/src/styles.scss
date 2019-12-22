@@ -3,7 +3,6 @@
 @import '@angular/material/prebuilt-themes/pink-bluegrey.css';
 
 body, dl, dt, dd, ul, ol, li, pre, form, fieldset, input, p, blockquote, th, td {
-  font-weight: 400;
   margin: 0;
   padding: 0;
 }
@@ -86,9 +85,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  background-color: #FFFFFF;
+  background-color: #FFFFFF!important;
   font-size: 1.4rem;
-  color: #b1b1b1;
+  color: #1b1b1b!important;
 }
 
 .bgImgCover {
@@ -96,4 +95,7 @@ body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+.borderBox{
+  box-sizing: border-box;
 }
