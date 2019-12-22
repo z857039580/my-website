@@ -1,0 +1,64 @@
+<div class="login bgImgCover" fxLayout="row" fxLayoutAlign="center center">
+
+  <div class="content" fxFlex="360px" fxFlex.lt-sm="90%">
+
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+      <mat-form-field>
+        <input matInput placeholder="用户名" formControlName="username" required>
+        <mat-error *ngIf="formErrors.username">{{formErrors.username}}</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="密码" formControlName="password" required>
+        <mat-error *ngIf="formErrors.password">{{formErrors.password}}</mat-error>
+      </mat-form-field>
+
+      <button type="submit" [disabled]="!loginForm.valid">Submit</button>
+    </form>
+
+
+  </div>
+</div>
+
+
+<!--
+<div class="login bgImgCover" fxLayout="row" fxLayoutAlign="center center">
+
+  <div class="content" fxFlex="360px" fxFlex.lt-sm="90%">
+
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+      <mat-form-field>
+        <input matInput placeholder="用户名" formControlName="username" required>
+        <mat-error *ngIf="formErrors.username">{{formErrors.username}}</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="密码" formControlName="password" required>
+        <mat-error *ngIf="formErrors.password">{{formErrors.password}}</mat-error>
+      </mat-form-field>
+
+      <button type="submit" [disabled]="!loginForm.valid">Submit</button>
+    </form>
+
+
+  </div>
+</div>
+-->
+
+
+
+
+<!--
+<div fxLayout='column' class="body" style="height: 300px; border: 1px solid #ff0000;">
+  <div fxFlex="20" [fxFlex.md]="50" style="border: 1px solid #ff9900;">111111</div>
+  <div fxFlex="40" fxLayout.md="row"> &lt;!&ndash;[fxLayout]="direction"   动态改变方向&ndash;&gt;
+    <div fxFlex="100px" fxFlex.md="100px" fxHide.lg>2-1</div>
+    <div fxFlex="200px" fxFlex.md="100px">2-2</div>
+    <div fxFlex="200px" fxFlex.md="100px" fxShow>2-3</div>&lt;!&ndash; fxShow 显示&ndash;&gt;
+    <div fxFlex="200px" fxFlex.md="100px" fxHide>2-4</div>&lt;!&ndash; fxHide 隐藏&ndash;&gt;
+  </div>
+  <div fxFlex>3</div>
+</div>
+-->

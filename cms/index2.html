@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .estrela {
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            animation-name: estrela;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .estrela.style1 {
+            animation-duration: 0.5s;
+            animation-name: estrela;
+        }
+
+        .estrela.style2 {
+            animation-duration: 1s;
+            animation-name: estrela;
+        }
+
+        .estrela.style3 {
+            animation-duration: 1.5s;
+            animation-name: estrela;
+        }
+
+        .estrela.style4 {
+            animation-duration: 2s;
+            animation-name: estrelaDestacada;
+        }
+
+        .estrela.tam1 {
+            width: 2px;
+            height: 2px;
+        }
+
+        .estrela.tam2 {
+            width: 3px;
+            height: 3px;
+        }
+
+        .estrela.tam3 {
+            width: 4px;
+            height: 4px;
+        }
+
+        .estrela.opacity1 {
+            opacity: 1;
+        }
+
+        .estrela.opacity2 {
+            opacity: .5;
+        }
+
+        .estrela.opacity3 {
+            opacity: .1;
+        }
+
+        @keyframes estrela {
+            0% {
+                box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.05);
+            }
+            50% {
+                box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
+            }
+            100% {
+                box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.05);
+            }
+        }
+
+        @keyframes estrelaDestacada {
+            0% {
+                background-color: #FFFFFF;
+                box-shadow: 0 0 10px 0px rgba(255, 255, 255, 1);
+            }
+            20% {
+                background-color: #FFC4C4;
+                box-shadow: 0 0 10px 0px rgba(255, 196, 196, 1);
+            }
+            80% {
+                background-color: #C4CFFF;
+                box-shadow: 0 0 10px 0px rgba(196, 207, 255, 1);
+            }
+            100% {
+                background-color: #FFFFFF;
+                box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.2);
+            }
+        }
+    </style>
+
+</head>
+<body style="background-color: #000">
+<div style="width: 100%; height: 296px; border: 1px solid #ff0000; position: fixed; overflow: hidden; z-index: 99999;">
+    <span class="estrela style2 opacity1 tam2" style="animation-delay: .3s; left: 488px; top: 186px;"></span>
+    <span
+            class="estrela style3 opacity1 tam3"
+            style="animation-delay: .4s; left: 1872px; top: 71px;"></span><span
+        class="estrela style2 opacity2 tam3" style="animation-delay: .6s; left: 1391px; top: 290px;"></span><span
+        class="estrela style1 opacity1 tam1" style="animation-delay: .6s; left: 1356px; top: 276px;"></span><span
+        class="estrela style4 opacity2 tam1" style="animation-delay: .6s; left: 1400px; top: 172px;"></span><span
+        class="estrela style2 opacity1 tam2"
+        style="animation-delay: .8s; left: 92px; top: 282px;"></span><span
+        class="estrela style3 opacity3 tam2" style="animation-delay: .5s; left: 1905px; top: 102px;"></span><span
+        class="estrela style3 opacity2 tam3"
+        style="animation-delay: .5s; left: 696px; top: 16px;"></span><span
+        class="estrela style1 opacity2 tam1"
+        style="animation-delay: .7s; left: 261px; top: 184px;"></span><span
+        class="estrela style2 opacity2 tam2"
+        style="animation-delay: .8s; left: 273px; top: 137px;"></span><span
+        class="estrela style3 opacity1 tam1" style="animation-delay: .7s; left: 1888px; top: 273px;"></span><span
+        class="estrela style1 opacity1 tam2" style="animation-delay: .3s; left: 1828px; top: 208px;"></span><span
+        class="estrela style4 opacity1 tam1" style="animation-delay: .2s; left: 1386px; top: 244px;"></span><span
+        class="estrela style2 opacity1 tam2"
+        style="animation-delay: .3s; left: 771px; top: 27px;"></span><span
+        class="estrela style3 opacity1 tam1"
+        style="animation-delay: .5s; left: 1791px; top: 33px;"></span><span
+        class="estrela style3 opacity2 tam1" style="animation-delay: .3s; left: 1378px; top: 117px;"></span><span
+        class="estrela style4 opacity1 tam2"
+        style="animation-delay: .6s; left: 783px; top: 153px;"></span><span
+        class="estrela style3 opacity3 tam1"
+        style="animation-delay: .4s; left: 1334px; top: 56px;"></span><span
+        class="estrela style4 opacity1 tam1"
+        style="animation-delay: .0s; left: 366px; top: 185px;"></span><span
+        class="estrela style4 opacity3 tam2" style="animation-delay: .0s; left: 1627px; top: 249px;"></span><span
+        class="estrela style4 opacity2 tam3"
+        style="animation-delay: .8s; left: 1497px; top: 75px;"></span><span
+        class="estrela style4 opacity2 tam2"
+        style="animation-delay: .3s; left: 256px; top: 107px;"></span><span
+        class="estrela style4 opacity2 tam2"
+        style="animation-delay: .7s; left: 910px; top: 98px;"></span><span
+        class="estrela style2 opacity2 tam1" style="animation-delay: .5s; left: 1005px; top: 112px;"></span><span
+        class="estrela style2 opacity2 tam2" style="animation-delay: .5s; left: 1417px; top: 143px;"></span><span
+        class="estrela style4 opacity3 tam1"
+        style="animation-delay: .8s; left: 599px; top: 151px;"></span><span
+        class="estrela style1 opacity2 tam1"
+        style="animation-delay: .2s; left: 1363px; top: 20px;"></span><span
+        class="estrela style3 opacity1 tam1"
+        style="animation-delay: .4s; left: 591px; top: 136px;"></span><span
+        class="estrela style3 opacity2 tam2"
+        style="animation-delay: .4s; left: 116px; top: 19px;"></span><span
+        class="estrela style2 opacity1 tam3" style="animation-delay: .4s; left: 1844px; top: 208px;"></span><span
+        class="estrela style1 opacity2 tam2"
+        style="animation-delay: .8s; left: 660px; top: 43px;"></span><span
+        class="estrela style2 opacity2 tam2"
+        style="animation-delay: .2s; left: 368px; top: 54px;"></span><span
+        class="estrela style1 opacity1 tam2"
+        style="animation-delay: .6s; left: 974px; top: 141px;"></span><span
+        class="estrela style1 opacity2 tam2"
+        style="animation-delay: .5s; left: 1408px; top: 91px;"></span><span
+        class="estrela style3 opacity1 tam3"
+        style="animation-delay: .8s; left: 1875px; top: 36px;"></span><span
+        class="estrela style3 opacity1 tam3"
+        style="animation-delay: .8s; left: 297px; top: 0px;"></span><span
+        class="estrela style4 opacity2 tam1"
+        style="animation-delay: .5s; left: 736px; top: 34px;"></span><span
+        class="estrela style3 opacity1 tam1"
+        style="animation-delay: .6s; left: 53px; top: 76px;"></span><span
+        class="estrela style4 opacity1 tam1" style="animation-delay: .0s; left: 1087px; top: 186px;"></span><span
+        class="estrela style1 opacity1 tam2"
+        style="animation-delay: .3s; left: 1369px; top: 46px;"></span><span
+        class="estrela style3 opacity1 tam2" style="animation-delay: .7s; left: 1857px; top: 213px;"></span><span
+        class="estrela style2 opacity1 tam1" style="animation-delay: .2s; left: 1047px; top: 223px;"></span><span
+        class="estrela style1 opacity1 tam2"
+        style="animation-delay: .7s; left: 1344px; top: 75px;"></span><span
+        class="estrela style3 opacity2 tam1"
+        style="animation-delay: .6s; left: 221px; top: 279px;"></span><span
+        class="estrela style3 opacity2 tam1"
+        style="animation-delay: .7s; left: 632px; top: 5px;"></span><span
+        class="estrela style1 opacity2 tam2" style="animation-delay: .4s; left: 1452px; top: 184px;"></span><span
+        class="estrela style1 opacity1 tam2"
+        style="animation-delay: .1s; left: 753px; top: 20px;"></span><span
+        class="estrela style1 opacity1 tam1"
+        style="animation-delay: .8s; left: 951px; top: 64px;"></span><span
+        class="estrela style4 opacity2 tam2"
+        style="animation-delay: .7s; left: 370px; top: 137px;"></span><span
+        class="estrela style2 opacity1 tam1"
+        style="animation-delay: .1s; left: 712px; top: 283px;"></span><span
+        class="estrela style2 opacity1 tam1" style="animation-delay: .3s; left: 1396px; top: 241px;"></span><span
+        class="estrela style2 opacity1 tam2"
+        style="animation-delay: .6s; left: 1200px; top: 41px;"></span><span
+        class="estrela style3 opacity2 tam1" style="animation-delay: .7s; left: 1459px; top: 239px;"></span><span
+        class="estrela style3 opacity2 tam3"
+        style="animation-delay: .2s; left: 704px; top: 8px;"></span><span
+        class="estrela style2 opacity2 tam1"
+        style="animation-delay: .5s; left: 608px; top: 35px;"></span><span
+        class="estrela style2 opacity2 tam1"
+        style="animation-delay: .3s; left: 307px; top: 76px;"></span><span
+        class="estrela style2 opacity2 tam1"
+        style="animation-delay: .7s; left: 252px; top: 81px;"></span><span
+        class="estrela style2 opacity1 tam1"
+        style="animation-delay: .6s; left: 664px; top: 242px;"></span><span
+        class="estrela style3 opacity1 tam2" style="animation-delay: .8s; left: 1331px; top: 153px;"></span><span
+        class="estrela style3 opacity2 tam1" style="animation-delay: .1s; left: 1640px; top: 171px;"></span><span
+        class="estrela style3 opacity3 tam1"
+        style="animation-delay: .4s; left: 1443px; top: 0px;"></span><span
+        class="estrela style2 opacity2 tam3"
+        style="animation-delay: .2s; left: 45px; top: 94px;"></span><span
+        class="estrela style4 opacity3 tam1"
+        style="animation-delay: .5s; left: 497px; top: 153px;"></span><span
+        class="estrela style2 opacity2 tam3"
+        style="animation-delay: .0s; left: 1538px; top: 11px;"></span><span
+        class="estrela style1 opacity2 tam3" style="animation-delay: .2s; left: 1835px; top: 245px;"></span><span
+        class="estrela style3 opacity1 tam2" style="animation-delay: .4s; left: 1867px; top: 234px;"></span><span
+        class="estrela style1 opacity1 tam3"
+        style="animation-delay: .8s; left: 903px; top: 20px;"></span><span
+        class="estrela style4 opacity2 tam1"
+        style="animation-delay: .3s; left: 818px; top: 26px;"></span><span
+        class="estrela style1 opacity3 tam1"
+        style="animation-delay: .0s; left: 628px; top: 132px;"></span><span
+        class="estrela style1 opacity3 tam2"
+        style="animation-delay: .4s; left: 1032px; top: 99px;"></span><span
+        class="estrela style4 opacity1 tam1"
+        style="animation-delay: .8s; left: 36px; top: 118px;"></span><span
+        class="estrela style4 opacity3 tam2"
+        style="animation-delay: .5s; left: 880px; top: 232px;"></span><span
+        class="estrela style4 opacity3 tam2" style="animation-delay: .5s; left: 1555px; top: 120px;"></span><span
+        class="estrela style4 opacity1 tam1" style="animation-delay: .0s; left: 1503px; top: 107px;"></span><span
+        class="estrela style3 opacity2 tam2"
+        style="animation-delay: .1s; left: 954px; top: 273px;"></span><span
+        class="estrela style4 opacity2 tam2"
+        style="animation-delay: .8s; left: 1175px; top: 27px;"></span><span
+        class="estrela style4 opacity1 tam1" style="animation-delay: .8s; left: 1755px; top: 263px;"></span><span
+        class="estrela style4 opacity1 tam3" style="animation-delay: .1s; left: 1495px; top: 266px;"></span><span
+        class="estrela style4 opacity1 tam2"
+        style="animation-delay: .1s; left: 1069px; top: 22px;"></span><span
+        class="estrela style3 opacity2 tam3" style="animation-delay: .6s; left: 1142px; top: 275px;"></span><span
+        class="estrela style4 opacity2 tam2"
+        style="animation-delay: .8s; left: 734px; top: 126px;"></span><span
+        class="estrela style3 opacity2 tam3"
+        style="animation-delay: .4s; left: 622px; top: 53px;"></span><span
+        class="estrela style1 opacity1 tam2"
+        style="animation-delay: .2s; left: 84px; top: 95px;"></span><span
+        class="estrela style2 opacity2 tam3"
+        style="animation-delay: .4s; left: 1404px; top: 16px;"></span><span
+        class="estrela style1 opacity1 tam3"
+        style="animation-delay: .2s; left: 276px; top: 59px;"></span><span
+        class="estrela style2 opacity1 tam1"
+        style="animation-delay: .1s; left: 565px; top: 208px;"></span><span
+        class="estrela style2 opacity1 tam2"
+        style="animation-delay: .0s; left: 690px; top: 114px;"></span><span
+        class="estrela style3 opacity1 tam1" style="animation-delay: .1s; left: 1040px; top: 290px;"></span><span
+        class="estrela style1 opacity1 tam2"
+        style="animation-delay: .2s; left: 427px; top: 252px;"></span><span
+        class="estrela style1 opacity1 tam3"
+        style="animation-delay: .4s; left: 483px; top: 262px;"></span><span
+        class="estrela style1 opacity2 tam2"
+        style="animation-delay: .5s; left: 824px; top: 230px;"></span><span
+        class="estrela style2 opacity2 tam2" style="animation-delay: .6s; left: 1006px; top: 293px;"></span><span
+        class="estrela style2 opacity3 tam1"
+        style="animation-delay: .2s; left: 1546px; top: 48px;"></span><span
+        class="estrela style2 opacity3 tam1"
+        style="animation-delay: .6s; left: 233px; top: 215px;"></span><span
+        class="estrela style1 opacity1 tam1"
+        style="animation-delay: .1s; left: 30px; top: 279px;"></span><span
+        class="estrela style1 opacity2 tam2"
+        style="animation-delay: .7s; left: 526px; top: 98px;"></span><span
+        class="estrela style1 opacity1 tam2"
+        style="animation-delay: .1s; left: 779px; top: 118px;"></span><span
+        class="estrela style1 opacity2 tam2"
+        style="animation-delay: .6s; left: 37px; top: 159px;"></span><span
+        class="estrela style4 opacity1 tam3"
+        style="animation-delay: .0s; left: 443px; top: 52px;"></span><span
+        class="estrela style2 opacity1 tam2"
+        style="animation-delay: .7s; left: 1011px; top: 72px;"></span><span
+        class="estrela style3 opacity1 tam3"
+        style="animation-delay: .8s; left: 475px; top: 23px;"></span><span
+        class="estrela style2 opacity3 tam1" style="animation-delay: .7s; left: 1354px; top: 201px;"></span><span
+        class="estrela style4 opacity3 tam3" style="animation-delay: .6s; left: 1277px; top: 124px;"></span><span
+        class="estrela style4 opacity2 tam3" style="animation-delay: .0s; left: 1328px; top: 150px;"></span><span
+        class="estrela style3 opacity1 tam1"
+        style="animation-delay: .0s; left: 1096px; top: 81px;"></span><span
+        class="estrela style2 opacity2 tam2"
+        style="animation-delay: .7s; left: 798px; top: 169px;"></span><span
+        class="estrela style2 opacity1 tam1" style="animation-delay: .1s; left: 1460px; top: 266px;"></span><span
+        class="estrela style2 opacity2 tam1" style="animation-delay: .2s; left: 1091px; top: 159px;"></span><span
+        class="estrela style1 opacity1 tam2"
+        style="animation-delay: .7s; left: 1914px; top: 94px;"></span><span
+        class="estrela style4 opacity2 tam2"
+        style="animation-delay: .4s; left: 1375px; top: 55px;"></span><span
+        class="estrela style1 opacity2 tam1" style="animation-delay: .0s; left: 1249px; top: 124px;"></span><span
+        class="estrela style2 opacity2 tam1"
+        style="animation-delay: .0s; left: 526px; top: 170px;"></span><span
+        class="estrela style4 opacity1 tam1"
+        style="animation-delay: .0s; left: 678px; top: 76px;"></span><span
+        class="estrela style4 opacity1 tam2" style="animation-delay: .7s; left: 1450px; top: 113px;"></span><span
+        class="estrela style3 opacity2 tam2"
+        style="animation-delay: .5s; left: 1896px; top: 16px;"></span><span
+        class="estrela style2 opacity1 tam1" style="animation-delay: .0s; left: 1443px; top: 228px;"></span><span
+        class="estrela style4 opacity1 tam2"
+        style="animation-delay: .7s; left: 782px; top: 247px;"></span><span
+        class="estrela style1 opacity1 tam1"
+        style="animation-delay: .3s; left: 659px; top: 73px;"></span><span
+        class="estrela style4 opacity1 tam3" style="animation-delay: .2s; left: 1061px; top: 160px;"></span><span
+        class="estrela style1 opacity3 tam2" style="animation-delay: .5s; left: 655px; top: 261px;"></span>
+</div>
+
+</body>
+</html>
