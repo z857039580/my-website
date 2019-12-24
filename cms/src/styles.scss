@@ -1,83 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
-//@import '../node_modules/normalize.css/normalize.css';
-@import '@angular/material/prebuilt-themes/pink-bluegrey.css';
 
-body, dl, dt, dd, ul, ol, li, pre, form, fieldset, input, p, blockquote, th, td {
-  margin: 0;
-  padding: 0;
+@import '../node_modules/normalize.css/normalize.css';
+
+
+@import '~@angular/material/theming';
+@include mat-core();
+
+$candy-app-primary: mat-palette($mat-amber);
+$candy-app-accent:  mat-palette($mat-amber, A200, A100, A400);
+$candy-app-warn:    mat-palette($mat-red);
+$candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-app-warn);
+@include angular-material-theme($candy-app-theme);
+
+// Define other theme.
+$cyan-cyan-primary: mat-palette($mat-cyan);
+$cyan-cyan-accent:  mat-palette($mat-cyan, A200, A100, A400);
+$cyan-cyan-warn:    mat-palette($mat-deep-orange);
+$cyan-cyan-theme:   mat-dark-theme($cyan-cyan-primary, $cyan-cyan-accent, $cyan-cyan-warn);
+.cyan-cyan-theme {
+  @include angular-material-theme($cyan-cyan-theme);
 }
 
-h1, h2, h3, h4, h4, h5 {
-  margin: 0;
-  padding: 0;
+// Define other theme.
+$pink-pink-primary: mat-palette($mat-pink);
+$pink-pink-accent:  mat-palette($mat-pink, A200, A100, A400);
+$pink-pink-warn:    mat-palette($mat-deep-orange);
+$pink-pink-theme:   mat-dark-theme($pink-pink-primary, $pink-pink-accent, $pink-pink-warn);
+.pink-pink-theme {
+  @include angular-material-theme($pink-pink-theme);
 }
 
-select {
-  font-size: 12px;
-}
 
-table {
-  border-collapse: collapse;
-}
 
-fieldset, img {
-  border: 0 none;
-}
 
-fieldset {
-  margin: 0;
-  padding: 0;
-}
-
-fieldset p {
-  margin: 0;
-  padding: 0 0 0 8px;
-}
-
-legend {
-  display: none;
-}
-
-address, caption, em, strong, th, i {
-  font-style: normal;
-  font-weight: 400;
-}
-
-table caption {
-  margin-left: -1px;
-}
-
-hr {
-  border-bottom: 1px solid #FFFFFF;
-  border-top: 1px solid #E4E4E4;
-  border-width: 1px 0;
-  clear: both;
-  height: 2px;
-  margin: 5px 0;
-  overflow: hidden;
-}
-
-ol, ul {
-  list-style-image: none;
-  list-style-position: outside;
-  list-style-type: none;
-}
-i,b{ font-weight: normal; font-style: normal}
-
-caption, th {
-  text-align: left;
-}
-
-q:before, q:after, blockquote:before, blockquote:after {
-  content: '';
-}
 
 
 
 html, body {
   height: 100%;
 }
-
 html {
   font-size: 10px;
 }
@@ -89,7 +50,6 @@ body {
   font-size: 1.4rem;
   color: #1b1b1b!important;
 }
-
 .bgImg {
   //background-image: url("../../../assets/images/loginBG.jpg");
   background-size: cover;
@@ -99,6 +59,4 @@ body {
 .borderBox{
   box-sizing: border-box;
 }
-
-
 

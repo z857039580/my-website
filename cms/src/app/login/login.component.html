@@ -6,14 +6,14 @@
     <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="formContent">
 
       <mat-form-field appearance="outline">
-        <mat-icon style="color: red" matPrefix class="material-icons">alarm_on</mat-icon>
+        <mat-icon matPrefix class="material-icons">account_circle</mat-icon>
         <mat-label>用户名</mat-label>
         <input matInput formControlName="username" required>
         <mat-error *ngIf="formErrors.username">{{formErrors.username}}</mat-error>
       </mat-form-field>
 
       <mat-form-field appearance="outline">
-        <mat-icon style="color: red" matPrefix class="material-icons">alarm_on</mat-icon>
+        <mat-icon matPrefix class="material-icons">lock</mat-icon>
         <mat-label>密码</mat-label>
         <input matInput placeholder="密码" formControlName="password" required>
         <mat-error *ngIf="formErrors.password">{{formErrors.password}}</mat-error>
