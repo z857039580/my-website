@@ -20,16 +20,16 @@ export class LoginComponent implements OnInit {
 // 为每一项表单验证添加说明文字
   validationMessage = {
     username: {
-      minlength: '用户名长度最少为3个字符',
-      maxlength: '用户名长度最多为10个字符',
+      minlength: '用户名长度最少为6个字符',
+      maxlength: '用户名长度最多为16个字符',
       required: '请填写用户名',
       notdown: '用户名不能以下划线开头',
       only: '用户名只能包含数字、字母、下划线'
     },
     password: {
       required: '请填写密码',
-      minlength: '密码长度最少为3个字符',
-      maxlength: '密码长度最多为10个字符',
+      minlength: '密码长度最少为6个字符',
+      maxlength: '密码长度最多为16个字符',
       notdown: '密码不能以下划线开头',
       only: '密码只能包含数字、字母、下划线'
     }
@@ -51,13 +51,13 @@ export class LoginComponent implements OnInit {
     this.loginForm = this.fb.group({
       username: ['', [
         Validators.required,
-        Validators.maxLength(10),
-        Validators.minLength(5),
+        Validators.maxLength(16),
+        Validators.minLength(6),
       ]],
       password: ['', [
         Validators.required,
-        Validators.maxLength(10),
-        Validators.minLength(5),
+        Validators.maxLength(16),
+        Validators.minLength(6),
       ]]
     });
 
@@ -93,10 +93,6 @@ export class LoginComponent implements OnInit {
 
     this.loginService.login(this.loginForm.value).subscribe((res) => {
       console.log(res)
-      if (res['code'] == 0) {
-        this.loginService.setUserCookie(res['data'])
-      }
-
     })
   }
 

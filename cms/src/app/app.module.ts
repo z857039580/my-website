@@ -12,8 +12,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AngularMaterialModule } from './angular-material.module';
 
 import { AppComponent } from './app.component';
-import { ErrorComponent } from './error/error.component';
-import { LoginComponent } from './login/login.component';
+import { ErrorComponent } from './views/error/error.component';
+import { LoginComponent } from './views/login/login.component';
 
 
 @NgModule({
